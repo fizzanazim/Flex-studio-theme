@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Flex Theme Studio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        *{
+
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        #flex-theme-studio{
+
+            display: flex;
+            width: 100%;
+
+        }
+
+        #flex-left{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+
+            width: 374px;
+            height: 850px;
+
+            position: sticky;
+            top: -25%;
+            
+        }
+        
+        #search-n-cart-section{
+
+            display: flex;
+            align-items: center;
+            
+            width: 100%;
+            height: 40px;
+            
+            /* background-color: aqua; */
+            font-size: 16px;
+            padding-left: 20px;
+            
+        }
+        
+        #butterfly-img-section{
+
+            width: 100%;
+            height: 250px;
+             
+            /* position: sticky;
+            top: -15%; */
+            /* background-color: aquamarine; */
+            
+            padding-left: 20px;
+            
+        }
+        
+        #butterfly-img{
+            
+            width: 246px;
+            
+        }
+
+        #vertical-header{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            width: 100%;
+            height: 394px;
+            
+            /* background-color: rgba(137, 43, 226, 0.452); */
+            
+        }
+        
+        .vertical-header-menu{
+            
+            display: flex;
+            align-items: center;
+            
+            width: 100%;
+            height: 37.5px;
+
+            /* background-color: rgb(60, 162, 128); */
+
+            padding-left: 20px;
+            
+        }
+        
+        .vertical-header-menu a{
+            
+            text-decoration: none;
+            color: #252424;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            transition: 0.5s;
+            
+        }
+        
+        .vertical-header-menu:hover a{
+            
+            color: #8D6360;
+            
+        }
+
+        #left-flex-social-icons{
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            width: 100%;
+            height: 45px;
+
+            /* background-color: #8d6360b3; */
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 17px;
+            color: #252424;
+
+            padding-left: 20px;
+
+        }
+
+        #left-flex-content{
+
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+
+            width: 100%;
+            height: 76px;
+
+            /* background-color: rgb(237, 199, 154); */
+
+            font-size: 12.5px;
+            color: #252424;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+           
+            text-align: left;
+            line-height: 17px;
+
+            padding-left: 20px;
+
+        }
+
+        #flex-right{
+
+            display: flex;
+            flex-direction: column;
+
+            width: 1122px;
+            /* height: 1163px; */
+
+            /* background-color: darkolivegreen; */
+
+        }
+
+        #notif-bar{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 1138px;
+            height: 50px;
+
+            /* background-color: aquamarine; */
+
+            color: #665b55;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+
+        }
+
+        #right-flex-painting-section{
+
+            width: 1138px;
+            height: 1138px;
+            background-image: url(./Flexthemestudio/flowers_1600x.jpg);
+
+            background-size: cover;
+
+        }
+
+        #right-flex-container-section{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            width: 1138px;
+            height: 1250px;
+
+            background-color: #F9F7F5;
+            
+        }
+        
+        #container-section-heading{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            width: 100%;
+            height: 80px;
+
+            /* background-color: lawngreen; */
+
+            font-size: 20px;
+            color: #4a4a4a;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        #container-section-bar{
+
+            display: flex;
+            /* align-items: center; */
+
+            width: 70px;
+            height: 1px;
+
+            background-color: #8D6360;
+
+        }
+
+        #continers-section{
+
+            display: flex;
+            flex-wrap: wrap; 
+        
+            width: 100%;
+            height: 1057px;
+
+            margin-top: 50px;
+
+            /* background-color: #F9F7F5; */
+
+        }
+
+        .containers{
+
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-content: center; */
+
+            width: 24.9%;
+            position: relative;
+            
+            /* background-color: #F9F7F5; */
+
+        }
+
+        .new-sale-ticket{
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+
+            align-content: center;
+            text-align: center;
+
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+
+            font-size: 10px;
+            color: white;
+
+            background-color: #90524D;
+
+        }
+
+        .container-section-img-div{
+
+
+            width: 100%;
+            height: 285px;
+
+            position: relative;
+
+            /* background-color: lightblue; */
+
+        }
+
+        .container-section-imgs{
+
+            width: 100%;
+
+        }
+
+        .container-section-imgs-hover{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+            height: 285px;
+
+            background-color: #f1edea87;
+
+            position: absolute;
+            top: 0;
+
+            opacity: 0;
+            transition: 0.4s;
+            
+        }
+        
+        .container-section-img-div:hover .container-section-imgs-hover{
+
+            opacity: 1;
+
+        }
+        
+        .container-hover-content-block{
+
+            width: 40%;
+            height: 30px;
+
+            border-radius: 30px;
+
+            background-color: rgb(252, 227, 191);
+
+            transform: translateY(30px);
+            opacity: 0;
+            
+            text-align: center;
+            align-content: center;
+
+            transition: 0.4s;
+            
+        }
+        
+        .container-section-img-div:hover .container-hover-content-block{
+            
+            opacity: 1;
+            transform: translateY(0px);
+
+            
+        }
+        
+        .container-hover-content-block:hover{
+            
+            background-color: #B0A28B;
+
+        }
+        
+        .container-hover-block-h3{
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: lighter;
+            color: rgb(134, 90, 87);
+
+            transition: 0.4s;
+            
+        }
+        
+        .container-hover-content-block:hover .container-hover-block-h3{
+
+            color: white;
+
+        }
+
+        .containers-content{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            height: 60px;
+
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #4e4e4d;
+            line-height: 22px;
+            
+            /* background-color: lightgoldenrodyellow; */
+            
+        }
+        
+        .containers-content a{
+            
+            text-decoration: none;
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #466146;
+            line-height: 20px;
+
+            transition: 0.5s;
+            
+        }
+        
+        .containers-content a:hover{
+
+            color: #8D6360;
+
+        }
+
+        /* FLEX THEME SIGN UP SECTION */
+        #contact-form-section{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            width: 100%;
+            height: 235px;
+
+            background-color: #F1EDEA;
+
+        }
+
+        #sign-up-section-heading{
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+            color: black;
+            font-weight: 400;
+            
+        }
+        
+        #sign-up-section{ 
+            
+            width: 690px;
+            height: 95px;
+
+            margin-top: 20px;
+            
+        }
+        
+        #sign-up-section-form{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+            height: 95px;
+
+        }
+        
+        .sign-up-section-bars{
+            
+            height: 35px;
+            
+            border: 1px solid #4A4A4A;
+            border-radius: 20px;
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: 400;
+            
+            line-height: 23px;
+            color: #3636368f;
+
+            transition: 0.4s;
+            
+            padding-left: 10px;
+            
+        }
+        
+        .sign-up-section-bars:hover{
+
+            border: 1px solid #3636368f;
+
+        }
+
+        #sign-up-section-btn{
+            
+            width: 140px;
+            height: 35px;
+            
+            border: 1px solid #4A4A4A;
+            border-radius: 20px;
+            background-color: #F1EDEA;;
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: 400;
+    
+            line-height: 23px;
+            color: #4A4A4A;
+            text-align: center;
+
+            transition: 0.4s;
+
+        }
+        
+        #sign-up-section-btn:hover{
+
+            background-color: #4A4A4A;
+            color: white;
+
+        }
+
+        /* BEGINNERS GUIDE SECTION */
+        #beginner-guide-section{
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: end;
+
+
+            width: 100%;
+            height: 400px;
+
+            background-color: rgb(249, 247, 245);
+
+        }
+
+        .beginner-guide-cols{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            width: 340px;
+            height: 320px;
+
+            border: 1px solid black;
+            background-color: rgb(249, 247, 245);
+
+            overflow: hidden;
+
+        }
+
+        .beginner-guide-imgs{
+            
+            width: 100%;
+            
+        }
+        
+        .beginner-guide-imgs:hover{
+
+            transform: scale(1.06);
+
+        }
+
+        .beginner-guide-h2{
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: 400;
+            
+            /* line-height: 20px; */
+            
+            padding-left: 20px;
+            margin-top: 20px;
+            
+        }
+        
+        .beginner-guide-h2 a{
+            
+            text-decoration: none;
+            color: #4A4A4A;
+            transition: 0.4s;           
+
+        }
+
+        .beginner-guide-h2:hover a{
+
+            color: #90524D;
+
+        }
+
+        .beginner-guide-read{
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 12px;
+            font-weight: 400;
+            
+            color: #4A4A4A;
+            line-height: 18px;
+            
+            padding-left: 20px;
+            margin-top: 10px;
+            /* margin-top: 20px; */
+
+        }
+
+        .beginner-guide-h3-link{
+            
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            
+            padding-left: 20px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            
+        }
+        
+        .beginner-guide-h3-link a{
+            
+            color: #90524db6;
+            text-decoration-color: #90524D;
+            text-decoration: underline dotted;
+
+            transition: 0.4s;
+            
+        }
+        
+        .beginner-guide-h3-link:hover a{
+            
+            color: #90524D;
+            
+        }
+
+        /* FLEX THEME FOOTER SECTION */
+        #flex-theme-footer-section{
+
+            width: 100%;
+            height: 383px;
+
+            background-color: #F9F7F5;
+
+        }
+
+        /* STUDIO SECTION */
+        #studio-section{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            
+
+            width: 100%;
+            height: 225px;
+
+            padding-top: 25px;
+
+            /* background-color: lightcoral; */
+
+        }
+
+        #studio-section-text{
+
+            width: 50%;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            color: rgb(102, 91, 85);
+            text-align: center;
+
+        }
+
+        #copyright-section{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            width: 100%;
+            height: 130px;
+
+            margin-top: 20px;
+
+            /* background-color: lemonchiffon; */
+
+        }
+
+        #copyright-section-button{
+            
+            width: 160px;
+            height: 40px;
+
+            border: 1px solid black;
+            background-color: #F9F7F5;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            line-height: 19px;
+            color: rgb(78, 77, 77);
+            
+            position: relative;
+
+            transition: 0.4s;
+            
+        }
+
+        .copyright-section-button-icon{
+            
+            display: inline-block; 
+            vertical-align: top; 
+            margin-top: 2px; 
+            margin-left: 5px;
+            
+            transition: 0.4s;
+
+        }
+        
+        #copyright-section-button:hover{
+            
+            color: rgb(78, 77, 77, 0.33);
+            
+        }
+        
+        #copyright-section-button:hover .copyright-section-button-icon{
+            
+            transform: rotate(180deg);
+            color: rgb(78, 77, 77, 0.33);
+            
+        }
+
+        /* COPYRIGHT BUTTON LIST */
+        #copyright-button-list{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            width: 160px;
+            height: 400px;
+
+            border: 1px solid black;
+            background-color: #F9F7F5;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            line-height: 19px;
+            
+            position: absolute;
+            top: -410px;
+            opacity: 0;
+            visibility: hidden;
+
+            transition: 0.4s;
+
+        }
+
+        #copyright-button-list a{
+            
+            color: rgb(78, 77, 77);
+            font-weight: 400;
+            text-decoration: none;
+
+            transition: 0.2s;
+            
+        }
+
+        #copyright-button-list a:hover{
+
+            color: rgb(78, 77, 77, 0.33);
+
+        }
+
+        #copyright-section-button:hover #copyright-button-list{
+
+            opacity: 1;
+            visibility: visible;
+
+        }
+
+        #copyright-section-text{
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 13px;
+            color: rgb(78, 77, 77);
+            
+        }
+        
+        .copyright-section-text-1{
+            
+            color: rgb(78, 77, 77);
+            text-decoration: none;
+
+            transition: 0.4s;
+            
+        }
+        
+        .copyright-section-text-1:hover{
+
+            color: #8D6360;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="flex-theme-studio">
+        <!-- FLEX LEFT SECTION -->
+        <div id="flex-left">
+            <div id="search-n-cart-section">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div id="butterfly-img-section">
+                <img id="butterfly-img" src="./Flexthemestudio/butterfly_2000x.jpg" alt="">
+            </div>
+
+            <div id="vertical-header">
+                <div class="vertical-header-menu"><a href="">Home</a></div>
+                <div class="vertical-header-menu"><a href="">Art Prints</a></div>
+                <div class="vertical-header-menu"><a href="">Art Prints: Flora</a></div>
+                <div class="vertical-header-menu"><a href="">Art Prints: Modern</a></div>
+                <div class="vertical-header-menu"><a href="">Origional Paintings</a></div>
+                <div class="vertical-header-menu"><a href="">Studio Code</a></div>
+                <div class="vertical-header-menu"><a href="">About the Artist</a></div>
+                <div class="vertical-header-menu"><a href="">FAQ</a></div>
+                <div class="vertical-header-menu"><a href="">Contact</a></div>
+                <div class="vertical-header-menu"><a href="">Buy Flex</a></div>
+            </div>
+            
+            <div id="left-flex-social-icons">
+                <i class="fa-brands fa-behance"></i>
+                <i class="fa-solid fa-volleyball"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <div id="left-flex-content">
+                <p class="left-flex-ps">© 2024 Flex Theme Studio.</p>
+                <p class="left-flex-ps">Designed by Out of the Sandbox.</p>
+                <p class="left-flex-ps">Powered by Shopify</p>
+            </div>
+        </div>
+
+        <!-- FLEX RIGHT SECTION -->
+        <div id="flex-right">
+            <!-- NOTIFICATION BAR -->
+            <div id="notif-bar">
+                <p><span style="font-size: 16px; color: rgb(102, 91, 85); font-weight: 700;">Get a third print FREE</span> when you buy two - this weekend only!</p>
+            </div>
+
+            <!-- FLEX PAINTING SECTION -->
+            <div id="right-flex-painting-section"></div>
+
+            <div id="right-flex-container-section">
+                <div id="container-section-heading">
+                    <h2>From the Gallery</h2>
+                </div>
+
+                <!-- RIGHT-FLEX-CONTAINER-BAR -->
+                <div id="container-section-bar"></div>
+
+                <!-- CONTAINER SECTION -->
+                <div id="continers-section">
+                    <div class="containers">
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/shop110_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Honey Bee</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <div class="containers">
+                        <div class="new-sale-ticket">New</div>
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/shop127_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Trout No.2</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <div class="containers">
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/shop149_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Plant</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <div class="containers">
+                        <div class="new-sale-ticket">Best Seller</div>
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/shop177_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Dolphin</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <div class="containers">
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/shop189_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Bouquet</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <div class="containers">
+                        <div class="new-sale-ticket">Staff Pick</div>
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/shop195_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Storm</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <div class="containers">
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/shop217_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Wake</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <div class="containers">
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/shop707_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Stem No. 2</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+                    <div class="containers">
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/webcicadas_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Butterfly</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <div class="containers">
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/wake1_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Abstract Art 1</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <div class="containers">
+                        <div class="new-sale-ticket">Staff Pick</div>
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/webss21_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Abstract Art 2</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+                    <div class="containers">
+                        <div class="container-section-img-div">
+                            <img class="container-section-imgs" src="./Flexthemestudio/blaze2_1600x.jpg" alt="">
+                            <div class="container-section-imgs-hover">
+                                <div class="container-hover-content-block">
+                                    <h3 class="container-hover-block-h3">Quick View</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers-content">
+                            <p><a href="">Abstract Art 3</a></p>
+                            <p><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px; color: #4e4d4d; font-style: italic;">from</span> $28.00 CAD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FLEX THEME SIGN UP SECTION -->
+            <div id="contact-form-section">
+                <h2 id="sign-up-section-heading">Follow my art journey</h2>
+                <div id="sign-up-section">
+                    <form id="sign-up-section-form" action="">
+                        <input type="text" placeholder="First Name" class="sign-up-section-bars" style="width: 522px;">
+                        <div>
+                            <input type="text" placeholder="Email*" class="sign-up-section-bars" style="width: 375px;">
+                            <button id="sign-up-section-btn">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- BEGINNERS GUIDE SECTION -->
+            <div id="beginner-guide-section">
+                <div class="beginner-guide-cols">
+                    <img class="beginner-guide-imgs" src="./Flexthemestudio/post-101_1600x.jpg" alt="">
+                    <h2 class="beginner-guide-h2"><a href="">Tips on framing prints and paintings</a></h2>
+                    <p class="beginner-guide-read">1 min read</p>
+                    <h3 class="beginner-guide-h3-link"><a href="">Read More</a></h3>
+                </div>
+
+                <div class="beginner-guide-cols">
+                    <img class="beginner-guide-imgs" src="./Flexthemestudio/framing_1600x.jpg" alt="">
+                    <h2 class="beginner-guide-h2"><a href="">Beginner's guide to art supplies</a></h2>
+                    <p class="beginner-guide-read">1 min read</p>
+                    <h3 class="beginner-guide-h3-link"><a href="">Read More</a></h3>
+                </div>
+
+                <div class="beginner-guide-cols">
+                    <img class="beginner-guide-imgs" src="./Flexthemestudio/post-tools2_1600x.jpg" alt="">
+                    <h2 class="beginner-guide-h2"><a href="">Studio Workshops: Painting 101</a></h2>
+                    <p class="beginner-guide-read">1 min read</p>
+                    <h3 class="beginner-guide-h3-link"><a href="">Read More</a></h3>
+                </div>
+            </div>
+
+            <!-- FLEX THEME FOOTER SECTION -->
+            <div id="flex-theme-footer-section">
+                <!-- STUDIO SECTION -->
+                <div id="studio-section">
+                    <img style="width: 200px; height: 120px;" src="./Flexthemestudio/studio__logo-brown_1600x.png" alt="">
+                    <p id="studio-section-text">All the lovely artwork in this demo shop is courtesy of  artist <span style="font-weight: 700;">Sarah Martinez</span>.
+                            To purchase, please visit <span><a style="color: #90524D; text-decoration: none;" href="">Snoogs + Wilde.</a></span></p>
+                </div>
+                
+                <!-- COPYRIGHT SECTION -->
+                <div id="copyright-section">
+                    <form action="">
+                        <button id="copyright-section-button">Pakistan (CAD $)<i class="fa-solid fa-chevron-down copyright-section-button-icon"></i>
+                            <div id="copyright-button-list">
+                                <h4><a href="">Argentina</a></h4>
+                                <h4><a href="">Africa</a></h4>
+                                <h4><a href="">Australia</a></h4>
+                                <h4><a href="">Austin</a></h4>
+                                <h4><a href="">America</a></h4>
+                                <h4><a href="">Asia</a></h4>
+                                <h4><a href="">Atlantic Ocean</a></h4>
+                                <h4><a href="">Albania</a></h4>
+                                <h4><a href="">Azerbaijan</a></h4>
+                            </div>
+                        </button>
+                    </form>
+                    <p id="copyright-section-text">© 2024 <a class="copyright-section-text-1" href="">Flex Theme Studio.</a> <a class="copyright-section-text-1" href="">Designed by Out of the Sandbox.</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
